@@ -1,8 +1,10 @@
 using System;
-public class LinkedListLearn
+using System.Collections.Generic;
+public class LinkedListLearn<T>
 {
     public void Method1()
     {
-        //LinkedList lsList= new LinkedList();
+        LinkedList<T> lsList= new LinkedList<T>();
+        
     }
 }
