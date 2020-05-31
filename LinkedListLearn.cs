@@ -3,6 +3,6 @@ public class LinkedListLearn
 {
     public void Method1()
     {
-        LinkedList lsList= new LinkedList();
+        //LinkedList lsList= new LinkedList();
     }
 }

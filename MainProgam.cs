@@ -17,6 +17,7 @@ namespace Algorithms
             {
                 Console.Write(result[i].ToString() + " ");
             }
+            Console.Read();
         }
         private static int[] GetNumbersfromConsole()
         {
@@ -29,6 +30,7 @@ namespace Algorithms
                 Console.WriteLine("Invalid number provided");
             }
             int[] arrNumbers = new int[sizeOfArray];
+             Console.WriteLine("Enter {0} numbers", sizeOfArray);
             for (int i = 0; i < sizeOfArray; i++)
             {
                 int _number = 0;
