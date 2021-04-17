@@ -8,6 +8,19 @@ namespace Algorithms
     {
         static void Main(string[] args)
         {
+            IMessageFIFOQueue messQueue = new MessageFIFOQueue();
+            int TotalMessagesInQueue = messQueue._countMessagesInQueue(string.Empty);
+            for (int i = 1; i <= 10; i++)
+            {
+                FIFOMessage message = new FIFOMessage()
+                {
+                    messageBody = "hello I am message  " + i.ToString()
+                };
+                messQueue.WriteMessage(message);
+            }
+            TotalMessagesInQueue = messQueue._countMessagesInQueue(string.Empty);
+            FIFOMessage messageResponse = messQueue.ReadMessage(string.Empty);
+
             //Console.WriteLine("Hello World!");
             int[] arrNumbers = GetNumbersfromConsole();
             BasicSort _bsSort = new BasicSort();
@@ -30,7 +43,7 @@ namespace Algorithms
                 Console.WriteLine("Invalid number provided");
             }
             int[] arrNumbers = new int[sizeOfArray];
-             Console.WriteLine("Enter {0} numbers", sizeOfArray);
+            Console.WriteLine("Enter {0} numbers", sizeOfArray);
             for (int i = 0; i < sizeOfArray; i++)
             {
                 int _number = 0;
