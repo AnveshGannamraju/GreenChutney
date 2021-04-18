@@ -8,7 +8,9 @@ namespace Algorithms
     {
         static void Main(string[] args)
         {
-            IMessageFIFOQueue messQueue = new MessageFIFOQueue();
+            #region IMessageFIFOQueue
+
+            /*IMessageFIFOQueue messQueue = new MessageFIFOQueue();
             int TotalMessagesInQueue = messQueue._countMessagesInQueue(string.Empty);
             for (int i = 1; i <= 10; i++)
             {
@@ -19,9 +21,16 @@ namespace Algorithms
                 messQueue.WriteMessage(message);
             }
             TotalMessagesInQueue = messQueue._countMessagesInQueue(string.Empty);
-            FIFOMessage messageResponse = messQueue.ReadMessage(string.Empty);
-
+            FIFOMessage messageResponse = messQueue.ReadMessage(string.Empty);*/
+            #endregion
             //Console.WriteLine("Hello World!");
+            #region missNumFindArray
+            MissNumFindArray missNumFindArray = new MissNumFindArray();
+            int[] numFind = new int[]{
+1,2,3,4,5,6,7,8,10,11
+            };
+            int missingNumber = missNumFindArray.FindMissingNumber(numFind, 1, 11);
+            #endregion
             int[] arrNumbers = GetNumbersfromConsole();
             BasicSort _bsSort = new BasicSort();
             int[] result = _bsSort.Sort(arrNumbers);
