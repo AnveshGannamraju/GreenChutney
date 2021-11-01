@@ -26,9 +26,7 @@ namespace Algorithms
             //Console.WriteLine("Hello World!");
             #region missNumFindArray
             MissNumFindArray missNumFindArray = new MissNumFindArray();
-            int[] numFind = new int[]{
-1,2,3,4,5,6,7,8,10,11
-            };
+            int[] numFind = new int[]{1,2,3,4,5,6,7,8,10,11 };
             int missingNumber = missNumFindArray.FindMissingNumber(numFind, 1, 11);
             #endregion
             int[] arrNumbers = GetNumbersfromConsole();
